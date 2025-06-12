@@ -80,11 +80,13 @@ const nouvelleCitation = document.getElementById("nouveau");
 const handleClickCitation = () => {
   
     do {
+      
       nombreAleatoire = genererNombreEntier(citations.length);
-       citationElement.innerHTML = citations[nombreAleatoire][0];
-      auteurElement.innerHTML = citations[nombreAleatoire][1];
+     
     } while (dernier===nombreAleatoire);
-    
+      citationElement.innerHTML = citations[nombreAleatoire][0];
+      auteurElement.innerHTML = citations[nombreAleatoire][1];
+      dernier = nombreAleatoire;
     
    
     
